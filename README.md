@@ -85,13 +85,7 @@ ___
 
 **Minimal New Item Flow Example**
 
-Using lambdas to subscribe to the `DataGridIP` events in the CTOR, one working implmentation is shown below.
-
-- Mouse double-click to edit.
-- In response, turn off `IsDataGridReadOnly` and update the title bar.
-- Make it read-only again when a row edit is committed or cancelled.
-
-Also shown is code that applies a `SelectAll` to the textbox when editing begins, and a block to customize column generation.
+Using lambdas to subscribe to the `DataGridIP` events in the CTOR, one working implementation is shown below.
 
 ```csharp
 new MainWindowViewModel DataContext => (MainWindowViewModel)base.DataContext;
@@ -195,4 +189,11 @@ class Record
 }
 ```
 
+___
 
+As tracked in the title bar, clicking in the blank row now enters edit mode properly.
+
+[![screenshot][1]][1]
+
+
+  [1]: https://i.sstatic.net/0ZMnLiCY.png
